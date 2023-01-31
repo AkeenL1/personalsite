@@ -33,3 +33,7 @@ body {
 #content img{
     opacity: 0.6;
 }
+
+#buttonLink {
+    opacity: 0.5;
+}

@@ -7,8 +7,8 @@ const NavBar = ({link1,link2,link3,link4}) => {
             <ul className="flex flex-row space-x-8 ">
                 <li className="border-b-2 h-fit border-[#513600]">{link1}</li>
                 <li className="border-b-2 h-fit border-[#005100]">{link2}</li>
-                <li className="border-b-2 h-fit border-[#4f0051]">{link3}</li>
-                <li className="border-b-2 h-fit border-[#510000]">{link4}</li>
+                <li className="border-b-2 h-fit border-[#510000]">{link3}</li>
+                <li className="border-b-2 h-fit border-[#3B330F]">{link4}</li>
             </ul>
             <div className="pb-4">
                 <h4 className="border-b-2 border-[#9b9a9a]">

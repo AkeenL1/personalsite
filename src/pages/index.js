@@ -3,6 +3,9 @@ import "../styles/global.css"
 import temp from "../images/temp.png"
 import NavBar from "../components/navbar"
 import Particlesbarnacles from "../components/particlesbarnacles"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithubAlt, faLinkedinIn} from "@fortawesome/free-brands-svg-icons"
+import { Link } from "gatsby"
 /*
 Design for desktop displays from 1024×768 through 1920×1080
 Design for mobile displays from 360×640 through 414×896
@@ -15,7 +18,7 @@ const indexPage = () => {
       <Particlesbarnacles ></Particlesbarnacles>
       <div id="content" className="flex flex-col  xl:w-3/5 w-3/4 h-3/4 mt-8 mb-6 rounded-md md:text-base lg:text-lg xl:text-xl justify-center">
         <div id="nav" className="mb-5 text-[#b7b6b6]">
-          <NavBar link1={"Blog"} link2={"LinkedIn"} link3={"Resume"} link4={"Ventures"}></NavBar>
+          <NavBar link1={"Blog"} link2={"Ventures"} link3={"Resume"} link4={"Contact Me"}></NavBar>
         </div>
         <div id="text" className="flex justify-evenly ">
           <div className="mr-3 w-1/4"id="pictureandinfo">
@@ -27,8 +30,15 @@ const indexPage = () => {
             Seeking new challenges to expand my knowledge and skills in front-end and back-end development for both professional use and passion projects.</p>
           </div>
         </div>
-        <div className="text-center mt-8 w-full text-[#b7b6b6]">
-            <a className="underline text-2xl" href="mailto:akeenlewis1@gmail.com">Email: akeenlewis1@gmail.com</a>
+        <div className="flex flex-col items-center text-center mt-8 w-full text-[#b7b6b6]">
+            <div className="flex justify-evenly w-1/2 mt-8">
+              <Link to=""className="border-2 p-4 rounded-full border-[#686868] bg-opacity-50 bg-[#000000] hover:bg-[#b7b6b6] text-[#653636]" >
+                <FontAwesomeIcon className="fa-2xl" icon={faGithubAlt} />
+              </Link>
+              <Link to="" className="border-2 p-4 rounded-full border-[#686868] bg-opacity-50 bg-[#000000] hover:bg-[#b7b6b6] text-[#655236]">
+                <FontAwesomeIcon className="fa-2xl"icon={faLinkedinIn} />  
+              </Link>
+            </div>
         </div>  
       </div>
     </main>
