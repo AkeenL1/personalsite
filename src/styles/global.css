@@ -1,9 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 body {
     font-family: 'Montserrat', sans-serif;
     color:white;
     background-color: black;
+}
+
+#content{
+    margin-bottom: 2em;
+    background-color: rgba(0, 0, 0, 0.05);
+    z-index: 2;
+}
+
+#drawing-area {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: -8% 23%;
+    opacity: 1;
+}
+#myCanvas{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+#temp{
+    width:100
+}
+
+#content img{
+    opacity: 0.6;
 }
