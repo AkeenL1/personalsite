@@ -9,26 +9,10 @@ body {
 }
 
 #content{
-    margin-bottom: 2em;
-    background-color: rgba(0, 0, 0, 0.05);
+    margin-bottom: 3em;
     z-index: 2;
 }
 
-#drawing-area {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    margin: -8% 23%;
-    opacity: 1;
-}
-#myCanvas{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-#temp{
-    width:100
-}
 
 #content img{
     opacity: 0.6;
@@ -37,3 +21,60 @@ body {
 #buttonLink {
     opacity: 0.5;
 }
+
+@media screen and (min-width:480px){
+    #profile{
+        width: 300px;
+        height: 300px;
+    }
+}
+
+#profile{
+    width: 400px;
+    height: 400px;
+    background-size: 400px;
+    z-index: 0;
+    background-blend-mode: multiply;
+    opacity: 0.3;
+    left: 8%;
+    top: 33%;
+    display: block;
+}
+
+@media screen and (max-width: 450px) {
+    #profile {
+    width: 350px;
+    height: 350px;
+    background-size: 350px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #profile {
+    width: 300px;
+    height: 300px;
+    background-size: 300px;
+    }
+}
+
+#sideLoadClick{
+    display: block;
+}
+
+.hideMenuNav {
+    display: none;
+  }
+  .showMenuNav {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: white;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }

@@ -3,7 +3,7 @@ import { useCallback } from "react";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 
-const Particlesbarnacles = () => {
+const ParticlesBG = () => {
     const particlesInit = useCallback(async engine => {
         console.log(engine);
         // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
@@ -86,4 +86,4 @@ const Particlesbarnacles = () => {
     );
 };
 
-export default Particlesbarnacles
+export default ParticlesBG
