@@ -41,12 +41,12 @@ const NavBar = ({link1,link2,link3}) => {
                 </div>
             </div>
             <ul className="flex flex-row space-x-8 max-md:hidden">
-                <li className="border-b-2 h-fit border-[#513600]">{link1}</li>
-                <li className="border-b-2 h-fit border-[#005100]">{link2}</li>
-                <li className="border-b-2 h-fit border-[#510000]">{link3}</li>
+                <li className="border-b-2 h-fit border-[#513600] hover:bg-gray-900 rounded-md p-1">{link1}</li>
+                <li className="border-b-2 h-fit border-[#005100] hover:bg-gray-900 rounded-md p-1">{link2}</li>
+                <li className="border-b-2 h-fit border-[#510000] hover:bg-gray-900 rounded-md p-1">{link3}</li>
             </ul>
             <div className="pb-4">
-                <h4 className="border-b-2 border-slate-200">
+                <h4 className="border-b-2 border-slate-200 rounded-md p-1">
                     Akeen K. Lewis
                 </h4>
             </div>

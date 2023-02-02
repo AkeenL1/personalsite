@@ -4,6 +4,7 @@ import * as React from "react"
 import "../styles/global.css"
 import ResumeParticlesBG4 from "../components/resumeparticles"
 import NavBar from "../components/navbar"
+
 const resume = () => {
     return (
         <main className="flex flex-col justify-center items-center bg-[#091620] text-[#F7FFF7] h-screen ">
@@ -13,7 +14,7 @@ const resume = () => {
                 <div id="headers" className="border-b-2 border-[#D49A49] rounded-full text-xl mb-8">
                     <div id="topHeader" className="flex justify-between ml-8 mr-8">
                         <h1 className="pt-3">Akeen Lewis</h1>
-                        <button className="bg-gray-700 hover:bg-gray-900 rounded-md p-2">Download Pdf</button>
+                        <a href={`/AkeenLewisResume.pdf`} download><button className="bg-gray-700 hover:bg-gray-900 rounded-md p-2">Download Pdf</button></a>
                     </div>
                     <div id="bottomheader" className="flex justify-evenly">
                         <h2>akeenlewis1@gmail.com <FontAwesomeIcon icon={faAtom} className="text-[#D49A49]"/> Orlando,FL</h2>
@@ -83,12 +84,12 @@ const resume = () => {
                     </div>
                     <div id="skillsBody">
                         <ul className="list-disc text-sm">
-                            <li>Experienced in various tools and technologies to enhance development processes and improve software quality.</li>
                             <li>HTML and CSS, including experience with Tailwind CSS framework</li>
-                            <li>Knowledge of Javacripty, including ReactJS and Typescript for building dynamic and interactive user interfaces</li>
+                            <li>Knowledge of Javascript, including ReactJS and Typescript for building dynamic and interactive user interfaces</li>
                             <li>Experience with GatsbyJS</li>
-                            <li>Java</li>
-                            <li>Docker</li>
+                            <li>Java,Spring and Spring Boot for developing robust and efficient applications</li>
+                            <li>Docker for containerizing applications.</li>
+                            <li>Experienced in Ruby and Ruby on Rails for building web applications</li>
                         </ul>
                     </div>
                 </div>

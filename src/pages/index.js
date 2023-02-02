@@ -20,7 +20,7 @@ const indexPage = () => {
             <p className="text-center text-[#b7b6b6] w-full "> 
             Currently pursuing a CS degree and working as a back-end software engineering intern, 
             honing and learning software engineering skills and practices in a collaborative environment. 
-            Always seeking new challenges to expand my knowledge front-end and back-end development for both professional use and passion projects.</p>
+            Always seeking new challenges to expand my knowledge in front-end and back-end development for both professional use and passion projects.</p>
           </div>
         </div>
         <div className="flex flex-col items-center text-center mt-8 w-full text-[#b7b6b6]">
