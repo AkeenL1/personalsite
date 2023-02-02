@@ -7,7 +7,7 @@ const styles = {
     divClasses:
     "transition-all ease-in duration-300 flex flex-col absolute inset-y-0 left-0 justify-evenly w-1/2 md:text-xl ",
     };
-const NavBar = ({link1,link2,link3,link4}) => {
+const NavBar = ({link1,link2,link3}) => {
 
     const [display, setDisplay] = useState(false);
 

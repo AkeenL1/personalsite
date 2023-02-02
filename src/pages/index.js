@@ -7,13 +7,13 @@ import { faGithubAlt, faLinkedinIn} from "@fortawesome/free-brands-svg-icons"
 
 const indexPage = () => {
   return (
-    <main className="bg-gradient-to-tr from-[#320f3a] via-[#030122] to-[#111111] flex justify-center items-center h-screen w-screen">
+    <main id="indexPage" className="bg-gradient-to-tr from-[#320f3a] via-[#030122] to-[#111111] flex justify-center items-center h-screen w-screen">
       <ParticlesBG ></ParticlesBG>
       <div id="profile" className="absolute bg-[url('../images/Untitled.png')] rounded-lg ">
       </div>
       <div id="content" className="flex flex-col  xl:w-3/5 w-3/4 h-3/4 mt-8 mb-6 rounded-md md:text-base lg:text-lg xl:text-xl justify-center">
         <div id="nav" className="mb-5 text-slate-200">
-          <NavBar link1={"Blog"} link2={"Ventures"} link3={"Resume"} link4={"Contact Me"} ></NavBar>
+          <NavBar link1={"blog"} link2={"ventures"} link3={"resume"} ></NavBar>
         </div>
         <div id="text" className="flex justify-evenly ">
           <div id="blurb" className="flex justify-center items-center w-3/4">
