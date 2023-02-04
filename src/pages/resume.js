@@ -10,7 +10,7 @@ const resume = () => {
         <main className="flex flex-col justify-center items-center bg-[#091620] text-[#F7FFF7] h-screen ">
             <ResumeParticlesBG4 className="z-0"/>
             <div id="resumeContainer" className="z-10 flex flex-col justify-between w-1/2 h-full border-4 bg-[#333A48] border-[#66999B] p-5 rounded-md opacity-90">
-                <NavBar link1={"home"} link2={"blog"} link3={"ventures"} />
+                <NavBar />
                 <div id="headers" className="border-b-2 border-[#D49A49] rounded-full text-xl mb-8">
                     <div id="topHeader" className="flex justify-between ml-8 mr-8">
                         <h1 className="pt-3">Akeen Lewis</h1>

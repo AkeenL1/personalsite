@@ -67,7 +67,7 @@ body {
 .hideMenuNav {
     display: none;
   }
-  .showMenuNav {
+.showMenuNav {
     display: block;
     position: absolute;
     width: 100%;
@@ -80,4 +80,9 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-  }
+}
+
+#projectContent{
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr 1fr;
+}
