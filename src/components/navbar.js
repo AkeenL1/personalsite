@@ -29,15 +29,21 @@ const NavBar = ({link1,link2,link3}) => {
                                 <FontAwesomeIcon icon={faX} className="text-xl" />
                             </button>
                         </div>
-                        <div className="flex hover:bg-[#261900] items-center justify-center bg-black h-full w-full bg-opacity-70 border-b-2 border-b-[#B4B4B4]">
-                            <Link to="/"><li className="">Home</li></Link>
+                        <Link to="/" className="flex hover:bg-[#261900] items-center justify-center bg-black h-full w-full bg-opacity-70 border-b-2 border-b-[#B4B4B4]">
+                            <div className="">
+                                <li className="">Home</li>
+                            </div>
+                        </Link>
+                        <Link to="/projects" className="flex hover:bg-[#041804] items-center justify-center bg-black h-full w-full bg-opacity-70 border-b-2 border-b-[#B4B4B4]">
+                            <div className="">
+                                <li className="">Projects</li>
+                            </div>
+                        </Link>
+                        <Link to="/resume" className="flex hover:bg-[#260000] items-center justify-center bg-black h-full w-full bg-opacity-70 ">
+                        <div className="">
+                            <li>Resume</li>
                         </div>
-                        <div className="flex hover:bg-[#041804] items-center justify-center bg-black h-full w-full bg-opacity-70 border-b-2 border-b-[#B4B4B4]">
-                            <Link to="/projects"><li className="">Projects</li></Link>
-                        </div>
-                        <div className="flex hover:bg-[#260000] items-center justify-center bg-black h-full w-full bg-opacity-70 ">
-                            <li><Link to="/resume">Resume</Link></li>
-                        </div>
+                        </Link>
                     </ul>
                 </div>
             </div>
