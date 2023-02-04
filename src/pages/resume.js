@@ -7,11 +7,11 @@ import NavBar from "../components/navbar"
 
 const resume = () => {
     return (
-        <main className="flex flex-col justify-center items-center bg-[#091620] text-[#F7FFF7] h-screen ">
+        <main className="flex flex-col justify-center items-center bg-[#091620] text-[#F7FFF7] sm:h-screen h-full ">
             <ResumeParticlesBG4 className="z-0"/>
-            <div id="resumeContainer" className="z-10 flex flex-col justify-between w-1/2 h-full border-4 bg-[#333A48] border-[#66999B] p-5 rounded-md opacity-90">
+            <div id="resumeContainer" className="z-10 flex flex-col justify-between w-full sm:w-1/2 h-full border-4 bg-[#333A48] border-[#66999B] p-5 rounded-md opacity-90">
                 <NavBar />
-                <div id="headers" className="border-b-2 border-[#D49A49] rounded-full text-xl mb-8">
+                <div id="headers" className="border-b-2 border-[#D49A49] rounded-full text-sm lg:text-xl mb-8">
                     <div id="topHeader" className="flex justify-between ml-8 mr-8">
                         <h1 className="pt-3">Akeen Lewis</h1>
                         <a href={`/AkeenLewisResume.pdf`} download><button className="bg-gray-700 hover:bg-gray-900 rounded-md p-2">Download Pdf</button></a>
@@ -27,7 +27,7 @@ const resume = () => {
                         <div className="border-b-2 border-[#D49A49] rounded-full"></div>
                     </div>
                     <div id="experienceBody">
-                        <div id="experienceBodyHeader" className="flex justify-between text-lg">
+                        <div id="experienceBodyHeader" className="flex justify-between text-[0.7em] md:text-lg">
                             <h3>Sightplan / SmartRent</h3>
                             <h3>Apr 2022 - Present</h3>
                         </div>
@@ -53,7 +53,7 @@ const resume = () => {
                         <div className="border-b-2 border-[#D49A49] rounded-full"></div>
                     </div>
                     <div id="educationBody">
-                        <div id="educationBodyHeader" className="flex justify-between text-lg">
+                        <div id="educationBodyHeader" className="flex justify-between text-[0.7em] md:text-lg">
                             <h3>University of Central Florida</h3>
                             <h3>Expected Graduation: December,2023</h3>  
                         </div>
@@ -82,8 +82,8 @@ const resume = () => {
                         <h2>Skills</h2>
                         <div className="border-b-2 border-[#D49A49] rounded-full"></div>
                     </div>
-                    <div id="skillsBody">
-                        <ul className="list-disc text-sm">
+                    <div id="skillsBody" className="p-b-4">
+                        <ul className="list-disc text-[0.73em] lg:text-sm ">
                             <li>HTML and CSS, including experience with Tailwind CSS framework</li>
                             <li>Knowledge of Javascript, including ReactJS and Typescript for building dynamic and interactive user interfaces</li>
                             <li>Experience with GatsbyJS</li>

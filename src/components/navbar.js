@@ -6,7 +6,7 @@ import { useState } from "react"
 import { Link } from "gatsby"
 const styles = {
     divClasses:
-    "transition-all ease-in duration-300 flex flex-col absolute inset-y-0 left-0 justify-evenly w-1/2 md:text-xl ",
+    "transition-all ease-in duration-300 flex flex-col fixed inset-y-0 left-0 justify-evenly w-1/2 md:text-xl h-screen",
     };
 const NavBar = ({link1,link2,link3}) => {
 
@@ -18,7 +18,7 @@ const NavBar = ({link1,link2,link3}) => {
 
     return (
         <nav className="flex uppercase justify-around align-center border-b-4 border-b-gray-200" >
-            <div className="flex flex-row justify-center align-center md:hidden">
+            <div className="flex flex-row justify-center align-center lg:hidden">
                 <button className="text-slate-200" onClick={change}>
                     <FontAwesomeIcon icon={faBars} className="text-3xl pb-4"/>
                 </button>    
@@ -41,7 +41,7 @@ const NavBar = ({link1,link2,link3}) => {
                     </ul>
                 </div>
             </div>
-            <ul className="flex flex-row space-x-8 max-md:hidden">
+            <ul className="flex flex-row space-x-8 max-lg:hidden">
                 <Link to="/"><li className="border-b-2 h-fit border-[#513600] hover:bg-gray-900 rounded-md p-1">Home</li></Link>
                 <Link to="/projects"><li className="border-b-2 h-fit border-[#005100] hover:bg-gray-900 rounded-md p-1">Projects</li></Link>
                 <Link to="/resume"><li className="border-b-2 h-fit border-[#510000] hover:bg-gray-900 rounded-md p-1">Resume</li></Link>
